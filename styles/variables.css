@@ -1,0 +1,16 @@
+:root {
+  --font-main: 'Inter', Arial, sans-serif;
+  --font-accent: 'PressStart2P', fantasy;
+  --font-weight-main: 400;
+  --font-weight-title: 700;
+  --page-width: clamp(320px, 100%, 700px);
+  --page-background: #e7e7e7;
+  --accent-color: #000;
+  --text-color: #000;
+  --contour-color: #000;
+  --animation-fill-color: #ff0000;
+  --button-text-color: #fff;
+  --card-border: 2px solid #000;
+  --grid-color: #d3d3d3;
+  --page-padding: clamp(10px, 2.7vw, 25px);
+}
