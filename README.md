@@ -7,3 +7,5 @@
 
 ## Изображения
 Изображения карточек загружаются с Unsplash и требуют подключения к интернету.
+
+https://github.com/EnNIway/zakrivayuschiy-teg-f
