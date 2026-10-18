@@ -1,10 +1,12 @@
-const saveButton = document.querySelector('.save-button');
 const dialog = document.querySelector('.memory-dialog');
+const openDialogButton = document.querySelector('.save-button');
 
-saveButton.addEventListener('click', () => {
-  if (!dialog.open) dialog.showModal();
+openDialogButton.addEventListener('click', () => {
+  dialog.showModal();
 });
 
-dialog.querySelector('form').addEventListener('submit', () => {
-  dialog.close();
+dialog.addEventListener('click', (event) => {
+  if (event.target === dialog) {
+    dialog.close();
+  }
 });

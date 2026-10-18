@@ -17,8 +17,8 @@
   <body class="page">
     <header class="header content-width">
       <a class="header__logo" href="#top" aria-label="Закрывающий тег — на главную">&lt;/HTML&gt;</a>
-      <h1 class="header__title">ЗАКРЫВАЮЩИЙ ТЕГ</h1>
-      <p class="header__subtitle">воспоминания о пути</p>
+      <h1 class="header__title">Закрывающий тег</h1>
+      <p class="header__subtitle">Воспоминания о пути</p>
     </header>
 
     <main class="main content-width" id="top">
@@ -26,7 +26,7 @@
         <article class="card">
           <h2 class="card__title">1. Самое начало</h2>
           <div class="card__image-wrap">
-            <img class="card__image image-filter-1" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85" alt="Ноутбук и рабочее место для учёбы" />
+            <img class="card__image filter-grayscale" src="./images/card-1.svg" alt="Иллюстрация ноутбука — начало обучения" loading="lazy" />
             <span class="card__label">первый шаг</span>
           </div>
           <div class="card__content">
@@ -50,7 +50,7 @@
         <article class="card">
           <h2 class="card__title">2. Первые успехи</h2>
           <div class="card__image-wrap">
-            <img class="card__image image-filter-2" src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=1200&q=85" alt="Записи и заметки в блокноте" />
+            <img class="card__image filter-sepia" src="./images/card-2.svg" alt="Записи и заметки в блокноте" loading="lazy" />
             <span class="card__label">получается!</span>
           </div>
           <div class="card__content">
@@ -72,7 +72,7 @@
         <article class="card">
           <h2 class="card__title">3. Когда сложно</h2>
           <div class="card__image-wrap">
-            <img class="card__image image-filter-3" src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=1200&q=85" alt="Открытый блокнот с заметками" />
+            <img class="card__image filter-contrast-brightness" src="./images/card-3.svg" alt="Открытый блокнот с заметками" loading="lazy" />
             <span class="card__label">не сдаваться</span>
           </div>
           <div class="card__content">
@@ -94,7 +94,7 @@
         <article class="card">
           <h2 class="card__title">4. Новые инструменты</h2>
           <div class="card__image-wrap">
-            <img class="card__image image-filter-4" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=85" alt="Рабочий стол с компьютером и кодом" />
+            <img class="card__image filter-hue-rotate" src="./images/card-4.svg" alt="Рабочий стол с компьютером и кодом" loading="lazy" />
             <span class="card__label">интерес</span>
           </div>
           <div class="card__content">
@@ -116,7 +116,7 @@
         <article class="card">
           <h2 class="card__title">5. Ритм и практика</h2>
           <div class="card__image-wrap">
-            <img class="card__image image-filter-5" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85" alt="Планирование задач в ежедневнике" />
+            <img class="card__image filter-grayscale-contrast" src="./images/card-5.svg" alt="Планирование задач в ежедневнике" loading="lazy" />
             <span class="card__label">практика</span>
           </div>
           <div class="card__content">
@@ -138,7 +138,7 @@
         <article class="card">
           <h2 class="card__title">6. Адаптивность</h2>
           <div class="card__image-wrap">
-            <img class="card__image image-filter-6" src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1200&q=85" alt="Цветные элементы графического дизайна" />
+            <img class="card__image filter-invert-sepia-hue" src="./images/card-6.svg" alt="Цветные элементы графического дизайна" loading="lazy" />
             <span class="card__label">гибкость</span>
           </div>
           <div class="card__content">
@@ -160,7 +160,7 @@
         <article class="card">
           <h2 class="card__title">7. Почти финиш</h2>
           <div class="card__image-wrap">
-            <img class="card__image image-filter-7" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=85" alt="Команда работает вместе за ноутбуками" />
+            <img class="card__image filter-saturate-brightness" src="./images/card-7.svg" alt="Команда работает вместе за ноутбуками" loading="lazy" />
             <span class="card__label">уверенность</span>
           </div>
           <div class="card__content">
@@ -182,7 +182,7 @@
         <article class="card">
           <h2 class="card__title">8. Дальше — больше</h2>
           <div class="card__image-wrap">
-            <img class="card__image image-filter-8" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85" alt="Светлое пространство для будущей работы" />
+            <img class="card__image filter-contrast-sepia" src="./images/card-8.svg" alt="Светлое пространство для будущей работы" loading="lazy" />
             <span class="card__label">вперёд!</span>
           </div>
           <div class="card__content">
@@ -203,7 +203,7 @@
         </article>
       </section>
       <section class="save-section" aria-label="Сохранить проект на память">
-        <button class="button save-button" type="button" onclick="document.querySelector('.memory-dialog').showModal()">
+        <button class="button save-button" type="button">
           <svg class="save-button__icon" viewBox="0 0 21 21" aria-hidden="true"><use href="./svg/floppy.svg#floppy"></use></svg>
           <span class="button__text">Сохранить на память</span>
         </button>
@@ -213,7 +213,7 @@
     <dialog class="memory-dialog">
       <div class="dialog__content">
         <svg class="dialog__icon" viewBox="0 0 21 21" aria-hidden="true"><use href="./svg/floppy.svg#floppy"></use></svg>
-        <p class="dialog__text">ВЫ ДЕЙСТВИТЕЛЬНО ХОТИТЕ<br />СОХРАНИТЬ ЭТОТ МОМЕНТ?</p>
+        <p class="dialog__text">ВЫ ДЕЙСТВИТЕЛЬНО ХОТИТЕ СОХРАНИТЬ ЭТОТ МОМЕНТ?</p>
       </div>
       <form method="dialog"><button class="button dialog__button" type="submit"><span class="button__text">ОК</span></button></form>
     </dialog>
