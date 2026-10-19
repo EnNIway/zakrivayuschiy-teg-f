@@ -1,16 +1,23 @@
-const hearts = document.querySelectorAll('.like-icon');
-const likeButtons = document.querySelectorAll('.card__like-button');
-const iconButtons = document.querySelectorAll('.card__icon-button');
+const cards = document.querySelectorAll('.card');
 
-function toggleLike(heart, button) {
-  const isLiked = heart.classList.toggle('is-liked');
-  button.querySelector('.button__text').textContent = isLiked ? 'Unlike' : 'Like';
-}
+cards.forEach((card) => {
+  const heart = card.querySelector('.like-icon');
+  const iconButton = card.querySelector('.card__icon-button');
+  const likeButton = card.querySelector('.card__like-button');
+  const likeText = likeButton.querySelector('.button__text');
 
-iconButtons.forEach((button, index) => {
-  button.addEventListener('click', () => toggleLike(hearts[index], likeButtons[index]));
-});
+  const toggleLike = () => {
+    const isLiked = heart.classList.toggle('is-liked');
 
-likeButtons.forEach((button, index) => {
-  button.addEventListener('click', () => toggleLike(hearts[index], button));
+    likeText.textContent = isLiked ? 'Unlike' : 'Like';
+    iconButton.setAttribute('aria-pressed', String(isLiked));
+    iconButton.setAttribute(
+      'aria-label',
+      isLiked ? 'Убрать лайк' : 'Поставить лайк',
+    );
+    likeButton.setAttribute('aria-pressed', String(isLiked));
+  };
+
+  iconButton.addEventListener('click', toggleLike);
+  likeButton.addEventListener('click', toggleLike);
 });
